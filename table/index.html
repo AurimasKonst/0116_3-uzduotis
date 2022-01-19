@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <meta charset="UTF-8">
+    <style>
+        .pixel {
+            width: 590px;
+            margin: 0 auto;
+        }
+
+        #page {
+            font-family: Helvetica, sans-serif;
+        }
+
+        #nav {
+            width: 100%;
+            background-color: rgb(238, 235, 235);
+            margin: 0px;
+            padding: 10px;
+        }
+
+        .nav1 {
+            width: 40%;
+            /*      background-color: rgb(163, 241, 117);*/
+            color: red;
+            vertical-align: text-bottom;
+            font-weight: bold;
+            font-size: 20px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .nav2 {
+            width: 30%;
+            color: rgb(69, 98, 224);
+            /*     background-color: rgb(202, 53, 145);*/
+            font-weight: bold;
+            vertical-align: text-bottom;
+            font-size: 10px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .nav3 {
+            color: rgb(69, 98, 224);
+            width: 80px;
+            /*    background-color: red;*/
+            font-weight: bold;
+            vertical-align: center;
+            font-size: 10px;
+            text-align: center;
+            /*    border-radius: 3px;*/
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #main1 {
+            width: 100%;
+            border-collapse: collapse;
+            /*  background-color: rgb(207, 32, 128);*/
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #main2 {
+            width: 100%;
+            border-collapse: collapse;
+            /*  background-color: rgb(207, 32, 128);*/
+            margin: 0px;
+            padding: 0px;
+            border-top: 2px solid rgb(160, 158, 157);
+            background-color: rgb(238, 235, 235);
+        }
+
+        #main3 {
+            width: 100%;
+            border-collapse: collapse;
+            /*  background-color: rgb(207, 32, 128);*/
+            margin: 0px;
+            padding: 0px;
+            border-top: 2px solid rgb(160, 158, 157);
+        }
+
+        #main4 {
+            width: 100%;
+            border-collapse: collapse;
+            /*  background-color: rgb(207, 32, 128);*/
+            margin: 0px;
+            padding: 0px;
+            border-top: 2px solid rgb(160, 158, 157);
+            background-color: rgb(238, 235, 235);
+        }
+
+        .date {
+            width: 50px;
+            height: 70px;
+            border-collapse: collapse;
+            /*     background-color: rgb(167, 224, 61);*/
+            vertical-align: bottom;
+            /*   border: 1px solid rgb(80, 77, 76);*/
+            /*  border-radius: 10px;*/
+            margin: 10px 10px 30px 10px;
+        }
+
+        .numtop {
+            vertical-align: center;
+            background-color: red;
+            color: rgb(255, 253, 253);
+            font-size: 8px;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            margin: 0px;
+            padding: 0px;
+            /*  height: 10px;*/
+
+            text-align: center;
+        }
+
+        .numcenter {
+            vertical-align: center;
+            /*       background-color: rgb(233, 141, 21);*/
+            height: auto;
+            width: auto;
+            border-right: 1px solid rgb(160, 158, 157);
+            border-left: 1px solid rgb(160, 158, 157);
+            color: red;
+            font-weight: bold;
+            padding: 0px;
+            font-size: 32px;
+            margin: 0px;
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .numbottom {
+            vertical-align: center;
+            background-color: rgb(100, 98, 98);
+            color: rgb(255, 253, 253);
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            font-size: 8px;
+            padding: 0px;
+            /*  height: 10px;*/
+            text-align: center;
+        }
+
+        .headline1 {
+            width: 100%;
+            /*   background-color: blueviolet;*/
+            margin: 0px auto;
+            padding: 0px 0px 0px 5px;
+            border-left: 2px solid rgb(160, 158, 157);
+
+        }
+
+        .line1 {
+            font-size: 16px;
+            font-weight: bold;
+            width: 70%;
+            height: 25%;
+        }
+
+        .line2 {
+            /*     background-color: rgb(53, 194, 34);*/
+            width: 70%;
+            height: 25%;
+            font-size: 8px;
+        }
+
+        .line3 {
+            /*    background-color: rgb(28, 33, 100);*/
+            width: 70%;
+            height: 25%;
+            font-size: 12px;
+        }
+
+        .line4 {
+            /*   background-color: rgb(184, 39, 39);*/
+            width: 100%;
+            height: 25%;
+            font-size: 10px;
+        }
+
+        #nav a:link,
+        visited {
+            color: rgb(79, 149, 241);
+            text-decoration: none;
+        }
+
+        .nav2 a:hover {
+            /*         color: rgb(226, 19, 88);*/
+            color: red;
+        }
+
+        .nav3 a:visited {
+            display: block;
+            /*      color: rgb(226, 19, 88);*/
+            background-color: rgb(212, 40, 40);
+            /*     color: white;*/
+            border-radius: 3px;
+        }
+
+        .nav3 a:active {
+            display: block;
+            width: auto;
+            color: rgb(251, 252, 250);
+            background-color: red;
+            border-radius: 3px;
+        }
+
+        .nav3 a:hover {
+            display: block;
+            width: auto;
+            height: 20px;
+            color: rgb(251, 252, 250);
+            background-color: red;
+            border-radius: 3px;
+            /*        padding: 0; 
+            margin: 0;
+            text-align: center;*/
+        }
+
+        .headline1 a:link {
+            color: rgb(54, 32, 179);
+            text-decoration: none;
+        }
+
+        .headline1 a:hover {
+            color: rgb(226, 19, 88);
+            text-decoration: underline 1px;
+    </style>
+</head>
+
+<body>
+    <div class="pixel">
+        <table id="page">
+            <tr>
+                <td>
+                    <table id="nav">
+                        <tr>
+                            <td class="nav1">
+                                Most Popular Stories
+                            </td>
+                            <td class="nav2">
+                                <a href="https://www.newsnow.co.uk/h/" target="_blank"> What's This? </a>
+                            </td>
+                            <td class="nav3">
+                                <a href="https://www.newsnow.co.uk/h/" target="_blank">NOW</a>
+                            </td>
+                            <td class="nav3">
+                                <a href="https://www.newsnow.co.uk/h/" target="_blank">TODAY</a>
+                            </td>
+                            <td class="nav3">
+                                <a href="https://www.newsnow.co.uk/h/" target="_blank">THIS WEEK</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table id="main1">
+                        <tr>
+                            <td>
+                                <table class="date">
+                                    <tr>
+                                        <td class="numtop">
+                                            PROP IT &#8657;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="numcenter">
+                                            ll
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="numbottom">
+                                            DROP IT &#8659;
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <table class="headline1">
+                                    <tr>
+                                        <td class="line1">
+                                            C-SPAN ranks presidents: Abe still on top, new shocker at the botyom <a
+                                                href="htps://...">&#187</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="line2">
+                                            Posted by: <a href="htps://...">techn...k</a> 6 hours, 32 minutes ago in <a
+                                                href="htps://...">Politics</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="line3">
+                                            Todays is President's Day, that sacred haliday on the United States calendar
+                                            devoted to honoring the births of the two most important presidents in ...
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="line4">
+                                            <a href="htps://...">More</a> <a href="htps://...">Discous</a>(0) <a
+                                                href="htps://...">Read Full Story at latimesblogs.latimes.com</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table id="main2">
+                        <tr>
+                            <td>
+                                <table class="date">
+                                    <tr>
+                                        <td class="numtop">
+                                            PROP IT &#8657;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="numcenter">
+                                            8
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="numbottom">
+                                            DROP IT &#8659;
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <table class="headline1">
+                                    <tr>
+                                        <td class="line1">
+                                            Obama Makes History... Breaks US Debt Record in Just 30 Days
+                                            <a href="htps://...">&#187</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="line2">
+                                            Posted by: <a href="htps://...">pc25</a> 21 minutes ago in <a
+                                                href="htps://...">News</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="line3">
+                                            On Friday the 12th, the Democratic Congress will approve the largest On
+                                            Friday the 12th, the Democratic Congress will approve the largest transfer
+                                            of private ...
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="line4">
+                                            <a href="htps://...">More</a> <a href="htps://...">Discous</a>(1) <a
+                                                href="htps://...">Full Story at gatewaypunding.blogspot.com</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table id="main3">
+                        <tr>
+                            <td>
+                                <table class="date">
+                                    <tr>
+                                        <td class="numtop">
+                                            PROP IT &#8657;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="numcenter">
+                                            l4
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="numbottom">
+                                            DROP IT &#8659;
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <table class="headline1">
+                                    <tr>
+                                        <td class="line1">
+                                            Ubequal Education<a href="htps://...">&#187</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="line2">
+                                            Posted by: <a href="populist">techn...k</a> 6 hours ago in <a
+                                                href="htps://...">Politics</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="line3">
+                                            No Child Left Behind demands equal test scores from neighborthoods with
+                                            unequal and resurces.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="line4">
+                                            <a href="htps://...">More</a> <a href="htps://...">Discous</a>(13)<a
+                                                href="htps://...">Full Story at inthesetimes.com</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table id="main4">
+                        <tr>
+                            <td>
+                                <table class="date">
+                                    <tr>
+                                        <td class="numtop">
+                                            PROP IT &#8657;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="numcenter">
+                                            17
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="numbottom">
+                                            DROP IT &#8659;
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <table class="headline1">
+                                    <tr>
+                                        <td class="line1">
+                                            Man could face jail over 'No Jews' sign<a href="htps://...">&#187</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="line2">
+                                            Posted by: <a href="populist">BroxBamber</a> 6 hours, 19 minutes ago in <a
+                                                href="htps://...">News</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="line3">
+                                            The head of a Turkish nationalist group could up to a year in jall after
+                                            being charged over a placard he put in his ...
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="line4">
+                                            <a href="htps://...">More</a> <a href="htps://...">Discous</a>(1)<a
+                                                href="htps://...">Full Story at nineman.com.au</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

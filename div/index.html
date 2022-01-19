@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <meta charset="UTF-8">
+    <style>
+        .pixel {
+            width: 590px;
+            margin: 0 auto;
+        }
+
+        #page {
+            font-family: Helvetica, sans-serif;
+        }
+
+        .table {
+            display: table;
+            width: 100%;
+
+            /*   background-color: rgb(99, 212, 128);*/
+        }
+
+        .row {
+            display: table-row;
+            border-collapse: collapse;
+            width: 100%;
+
+        }
+
+        .cell {
+            display: table-cell;
+            border-collapse: separate;
+
+        }
+
+
+
+        #nav {
+            width: 100%;
+            float: left;
+            background-color: rgb(238, 235, 235);
+        }
+
+        #nav1 {
+            width: 40%;
+            /*    background-color: rgb(163, 241, 117);*/
+            color: rgb(248, 7, 7);
+            vertical-align: text-bottom;
+            font-weight: bold;
+            font-size: 20px;
+
+        }
+
+        #nav2 {
+            width: 30%;
+            color: rgb(69, 98, 224);
+            /*     background-color: rgb(202, 53, 145);*/
+            font-weight: bold;
+            vertical-align: text-bottom;
+            font-size: 10px;
+        }
+
+        .nav3 {
+            color: rgb(69, 98, 224);
+            width: 80px;
+            /*  background-color: red;*/
+            font-weight: bold;
+            vertical-align: center;
+            font-size: 10px;
+            text-align: center;
+
+        }
+
+        #main1 {
+            width: 100%;
+            /* border-collapse: collapse;
+            /*  background-color: rgb(207, 32, 128);*/
+
+        }
+
+        #main2 {
+            width: 100%;
+            /* border-collapse: separate;
+            /*  background-color: rgb(207, 32, 128);*/
+            margin: 0px;
+            padding: 0px;
+            border-top: 2px solid rgb(160, 158, 157);
+            background-color: rgb(238, 235, 235);
+        }
+
+        #main3 {
+            width: 100%;
+            /*  border-collapse: separate;
+                /*  background-color: rgb(207, 32, 128);*/
+            margin: 0px;
+            padding: 0px;
+            border-top: 2px solid rgb(160, 158, 157);
+        }
+
+        #main4 {
+            width: 100%;
+            /* border-collapse: separate;
+                /*  background-color: rgb(207, 32, 128);*/
+
+            border-top: 2px solid rgb(160, 158, 157);
+            background-color: rgb(238, 235, 235);
+        }
+
+        .date {
+            width: 50px;
+            height: 70px;
+            border-collapse: collapse;
+            /*     background-color: rgb(167, 224, 61);*/
+
+            /*   border: 1px solid rgb(80, 77, 76);*/
+            /*  border-radius: 10px;*/
+            margin: 10px 10px 10px 10px;
+        }
+
+        .numtop {
+            vertical-align: center;
+            background-color: red;
+            color: rgb(255, 253, 253);
+            font-size: 8px;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+
+            /*  height: 10px;*/
+
+            text-align: center;
+        }
+
+        .numcenter {
+            vertical-align: center;
+            /*       background-color: rgb(233, 141, 21);*/
+            height: auto;
+            width: auto;
+            border-right: 1px solid rgb(160, 158, 157);
+            border-left: 1px solid rgb(160, 158, 157);
+            color: red;
+            font-weight: bold;
+
+            font-size: 32px;
+
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .numbottom {
+            vertical-align: center;
+            background-color: rgb(100, 98, 98);
+            color: rgb(255, 253, 253);
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            font-size: 8px;
+            /*  height: 10px;*/
+            text-align: center;
+        }
+
+        .headline1 {
+            width: 100%;
+            /*   background-color: blueviolet;*/
+            padding: 0px 0px 0px 10px;
+            border-left: 2px solid rgb(160, 158, 157);
+            border-spacing: 5px;
+
+        }
+
+        .line1 {
+            font-size: 16px;
+            font-weight: bold;
+            width: 100%;
+            height: 25%;
+        }
+
+        .line2 {
+            /*     background-color: rgb(53, 194, 34);*/
+            width: 100%;
+            height: 25%;
+            font-size: 8px;
+        }
+
+        .line3 {
+            /*    background-color: rgb(28, 33, 100);*/
+            width: 100%;
+            height: 25%;
+            font-size: 12px;
+        }
+
+        .line4 {
+            /*   background-color: rgb(184, 39, 39);*/
+            width: 100%;
+            height: 25%;
+            font-size: 10px;
+        }
+
+        #nav a:link,
+        visited {
+            color: rgb(79, 149, 241);
+            text-decoration: none;
+        }
+
+        #nav a:hover {
+            color: rgb(226, 19, 88);
+
+        }
+
+        /*   .nav3 a:active {
+            display: block;
+            /*      color: rgb(226, 19, 88);
+            background-color: rgb(212, 40, 40);
+            color: white;
+            border-radius: 3px;
+        }*/
+
+        /*   .nav3 a:active {
+            display: block;
+            width: auto;
+            color: rgb(251, 252, 250);
+            background-color: red;
+            border-radius: 3px;
+        }*/
+
+
+        .headline1 a:link {
+            color: rgb(54, 32, 179);
+            text-decoration: none;
+        }
+
+        .headline1 a:hover {
+            color: rgb(226, 19, 88);
+            text-decoration: underline 1px;
+    </style>
+</head>
+
+<body>
+    <div class="pixel">
+        <div id="page" class="table">
+            <div class="row">
+                <div class="cell">
+                    <div id="nav" class="table">
+                        <div class="row">
+                            <div class="cell" id="nav1">
+                                Most Popular Stories
+                            </div>
+                            <div class="cell" id="nav2">
+                                <a href=" https://www.newsnow.co.uk/h/" target="_blank"> What's This? </a>
+                            </div>
+                            <div class="cell">
+                                <div class="nav3">
+                                    <a href="https://www.newsnow.co.uk/h/" target="_blank">NOW</a>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div class="nav3">
+                                    <a href="https://www.newsnow.co.uk/h/" target="_blank">TODAY</a>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div class="nav3">
+                                    <a href="https://www.newsnow.co.uk/h/" target="_blank">THIS WEEK</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell">
+                            <div class="table">
+                                <div class="main1">
+                                    <div class="row">
+                                        <div class="cell">
+                                            <div class="table">
+                                                <div class="date">
+                                                    <div class="row">
+                                                        <div class="cell">
+                                                            <div class="numtop">
+                                                                PROP IT &#8657;
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="cell">
+                                                            <div class="numcenter">
+                                                                ll
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="cell">
+                                                            <div class="numbottom">
+                                                                DROP IT &#8659;
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cell">
+                                            <div class="table">
+                                                <div class="headline1">
+                                                    <div class="row">
+                                                        <div class="cell">
+                                                            <div class="line1">
+                                                                C-SPAN ranks presidents: Abe still on top, new shocker
+                                                                at the
+                                                                botyom
+                                                                <a href="htps://...">&#187</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="cell">
+                                                            <div class="line2">>
+                                                                Posted by: <a href="htps://...">techn...k</a> 6 hours,
+                                                                32
+                                                                minutes
+                                                                ago in <a href="htps://...">Politics</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="cell">
+                                                            <div class="line3">
+                                                                Todays is President's Day, that sacred haliday on the
+                                                                United
+                                                                States calendar
+                                                                devoted to honoring the births of the two most important
+                                                                presidents in ...
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="cell">
+                                                            <div class="line4">
+                                                                <a href="htps://...">More</a>
+                                                                <a href="htps://...">Discous</a>(0)
+                                                                <a href="htps://...">Read Full Story
+                                                                    atlatimesblogs.latimes.com</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell">
+                            <div id="main2" class="cell">
+                                <div class="row">
+                                    <div class="cell">
+                                        <div class="table">
+                                            <div class="date">
+                                                <div class="row">
+                                                    <div class="cell">
+                                                        <div class="numtop">
+                                                            PROP IT &#8657;
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="cell">
+                                                        <div class="numcenter">
+                                                            8
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="cell">
+                                                        <div class="numbottom">
+                                                            DROP IT &#8659;
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cell">
+                                        <div class="table">
+                                            <div class="headline1">
+                                                <div class="row">
+                                                    <div class="line1" class="cell">
+                                                        Obama Makes History... Breaks US Debt Record in Just 30 Days
+                                                        <a href="htps://...">&#187</a>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="line2" class="cell">
+                                                        Posted by: <a href="htps://...">pc25</a> 21 minutes ago in <a
+                                                            href="htps://...">News</a>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="cell">
+                                                        <div class="line3">
+                                                            On Friday the 12th, the Democratic Congress will approve the
+                                                            largest On
+                                                            Friday the 12th, the Democratic Congress will approve the
+                                                            largest transfer
+                                                            of private ...
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="line4" class="cell">
+                                                        <a href="htps://...">More</a> <a
+                                                            href="htps://...">Discous</a>(1) <a href="htps://...">Full
+                                                            Story at
+                                                            gatewaypunding.blogspot.com</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell">
+                            <div class="table">
+                                <div id="main3" class="cell">
+                                    <div class="row">
+                                        <div class="cell">
+                                            <div class="table">
+                                                <div class="date">
+                                                    <div class="row">
+                                                        <div class="cell">
+                                                            <div class="numtop">
+                                                                PROP IT &#8657;
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="cell">
+                                                            <div class="numcenter">
+                                                                l4
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="cell">
+                                                            <div class="numbottom">
+                                                                DROP IT &#8659;
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cell">
+                                            <div class="table">
+                                                <div class="headline1">
+                                                    <div class="row">
+                                                        <div class="cell">
+                                                            <div class="line1">
+                                                                Ubequal Education
+                                                                <a href="htps://...">&#187</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="cell">
+                                                            <div class="line2">
+                                                                Posted by: <a href="htps://...">techn...k</a> 6 hours,
+                                                                ago in <a href="htps://...">Politics</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="cell">
+                                                            <div class="line3">
+                                                                No Child Left Behind demands equal test scores from
+                                                                neighborthoods with unequal and resurces.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="cell">
+                                                            <div class="line4">
+                                                                <a href="htps://...">More</a>
+                                                                <a href="htps://...">Discous</a>(0)
+                                                                <a href="htps://...">Read Full Story
+                                                                    atlatimesblogs.latimes.com</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell">
+                            <div id="main4" class="cell">
+                                <div class="row">
+                                    <div class="cell">
+                                        <div class="table">
+                                            <div class="date">
+                                                <div class="row">
+                                                    <div class="cell">
+                                                        <div class="numtop">
+                                                            PROP IT &#8657;
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="cell">
+                                                        <div class="numcenter">
+                                                            17
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="cell">
+                                                        <div class="numbottom">
+                                                            DROP IT &#8659;
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cell">
+                                        <div class="table">
+                                            <div class="headline1">
+                                                <div class="row">
+                                                    <div class="line1" class="cell">
+                                                        Obama Makes History... Breaks US Debt Record in Just 30 Days
+                                                        <a href="htps://...">&#187</a>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="line2" class="cell">
+                                                        Posted by: <a href="htps://...">pc25</a> 21 minutes ago in <a
+                                                            href="htps://...">News</a>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="cell">
+                                                        <div class="line3">
+                                                            The head of a Turkish nationalist group could up to a year
+                                                            in jall after being charged over a placard he put in his ...
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="line4" class="cell">
+                                                        <a href="htps://...">More</a> <a
+                                                            href="htps://...">Discous</a>(1) <a href="htps://...">Full
+                                                            Story at
+                                                            gatewaypunding.blogspot.com</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
