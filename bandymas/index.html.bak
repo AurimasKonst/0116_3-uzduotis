@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <meta charset="UTF-8">
+    <style>
+        
+
+        table:nth-of-type(odd)  {
+            width: 100%;
+             border-collapse: separate;
+           background-color: rgb(207, 32, 128);
+            margin: 0px;
+            padding: 0px;
+            border-top: 2px solid rgb(160, 158, 157);
+            background-color: rgb(238, 235, 235);
+        }
+
+       table:nth-of-type(even)  {
+            width: 100%;
+             border-collapse: separate;
+                 background-color: rgb(156, 132, 128);
+            margin: 0px;
+            padding: 0px;
+            border-top: 2px solid rgb(160, 158, 157);
+        }
+
+       
+    </style>
+</head>
+
+<body>
+   
+        <div   class="table">
+            <div class="row">
+                <div class="cell">
+                    <div >
+					jjjjjjjjjjjjjjjj
+					</div>
+					
+					</div>
+					</div>
+					</div>
+					<div   class="table">
+            <div class="row">
+                <div class="cell">
+                    <div >
+					cccccccccccccccc
+					</div>
+					
+					</div>
+					<div>
+					</div>
+					<div   class="table">
+            <div class="row">
+                <div class="cell">
+                    <div >
+					fffffffffffffffff
+					</div>
+					
+					</div>
+					</div>
+					</div>
+                        
+</body>
+
+</html>

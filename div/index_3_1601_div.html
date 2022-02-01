@@ -2,12 +2,17 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>3_uzduotis_1601_div</title>
     <meta charset="UTF-8">
     <style>
         .pixel {
             width: 590px;
             margin: 0 auto;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
         }
 
         #page {
@@ -16,8 +21,8 @@
 
         .table {
             display: table;
+            border-collapse: collapse;
             width: 100%;
-
             /*   background-color: rgb(99, 212, 128);*/
         }
 
@@ -25,48 +30,65 @@
             display: table-row;
             border-collapse: collapse;
             width: 100%;
-
         }
 
         .cell {
             display: table-cell;
-            border-collapse: separate;
+            border-collapse: collapse;
+
 
         }
 
-
-
-        #nav {
+        #nav .row {
             width: 100%;
-            float: left;
-            background-color: rgb(238, 235, 235);
+            /*  float: left;*/
+            background-color: rgb(249, 249, 249);
+            height: 50px;
+            vertical-align: middle;
+            ;
+
         }
 
         #nav1 {
-            width: 40%;
+            width: 35%;
             /*    background-color: rgb(163, 241, 117);*/
             color: rgb(248, 7, 7);
-            vertical-align: text-bottom;
             font-weight: bold;
             font-size: 20px;
+            padding-left: 5px;
+            margin: 20px;
+            vertical-align: middle;
+
 
         }
 
         #nav2 {
-            width: 30%;
-            color: rgb(69, 98, 224);
+            width: 35%;
+            vertical-align: middle;
+        }
+
+        #nav2 a {
+            color: rgb(48, 160, 194);
+            ;
             /*     background-color: rgb(202, 53, 145);*/
             font-weight: bold;
             vertical-align: text-bottom;
             font-size: 10px;
         }
 
-        .nav3 {
-            color: rgb(69, 98, 224);
-            width: 80px;
-            /*  background-color: red;*/
+        #nav3 {
+            vertical-align: middle;
+            padding-left: 13px;
+
+        }
+
+        #nav3 a {
+            /*  display: block;*/
+            color: rgb(48, 160, 194);
+            /*  width: 80px;*/
+            /*   background-color: red;*/
             font-weight: bold;
-            vertical-align: center;
+
             font-size: 10px;
             text-align: center;
 
@@ -76,7 +98,6 @@
             width: 100%;
             /* border-collapse: collapse;
             /*  background-color: rgb(207, 32, 128);*/
-
         }
 
         #main2 {
@@ -85,8 +106,8 @@
             /*  background-color: rgb(207, 32, 128);*/
             margin: 0px;
             padding: 0px;
-            border-top: 2px solid rgb(160, 158, 157);
-            background-color: rgb(238, 235, 235);
+            border-top: 2px solid rgb(222, 222, 222);
+            background-color: rgb(247, 247, 247);
         }
 
         #main3 {
@@ -95,39 +116,37 @@
                 /*  background-color: rgb(207, 32, 128);*/
             margin: 0px;
             padding: 0px;
-            border-top: 2px solid rgb(160, 158, 157);
+            border-top: 2px solid rgb(222, 222, 222);
         }
 
         #main4 {
             width: 100%;
             /* border-collapse: separate;
                 /*  background-color: rgb(207, 32, 128);*/
-
-            border-top: 2px solid rgb(160, 158, 157);
-            background-color: rgb(238, 235, 235);
+            border-top: 2px solid rgb(222, 222, 222);
+            background-color: rgb(247, 247, 247);
         }
 
         .date {
-            width: 50px;
+            width: 40px;
             height: 70px;
-            border-collapse: collapse;
+            /*       border-collapse: collapse;*/
+            text-align: center;
             /*     background-color: rgb(167, 224, 61);*/
-
             /*   border: 1px solid rgb(80, 77, 76);*/
             /*  border-radius: 10px;*/
-            margin: 10px 10px 10px 10px;
+            margin: 0px 10px 10px 10px;
+            vertical-align: text-top;
         }
 
         .numtop {
             vertical-align: center;
-            background-color: red;
-            color: rgb(255, 253, 253);
+            background-color: rgb(214, 38, 45);
+            color: rgb(255, 255, 255);
             font-size: 8px;
             border-top-left-radius: 3px;
             border-top-right-radius: 3px;
-
             /*  height: 10px;*/
-
             text-align: center;
         }
 
@@ -140,9 +159,7 @@
             border-left: 1px solid rgb(160, 158, 157);
             color: red;
             font-weight: bold;
-
             font-size: 32px;
-
             text-align: center;
             background-color: rgb(255, 255, 255);
         }
@@ -159,12 +176,13 @@
         }
 
         .headline1 {
-            width: 100%;
+            /*  width: 100%;*/
             /*   background-color: blueviolet;*/
-            padding: 0px 0px 0px 10px;
+            margin: 10px 00px 10px 0px;
             border-left: 2px solid rgb(160, 158, 157);
             border-spacing: 5px;
-
+            padding-left: 10px;
+            ;
         }
 
         .line1 {
@@ -197,22 +215,22 @@
 
         #nav a:link,
         visited {
-            color: rgb(79, 149, 241);
             text-decoration: none;
         }
 
         #nav a:hover {
             color: rgb(226, 19, 88);
-
         }
 
         /*   .nav3 a:active {
             display: block;
-            /*      color: rgb(226, 19, 88);
+            color: rgb(226, 19, 88);
             background-color: rgb(212, 40, 40);
             color: white;
             border-radius: 3px;
-        }*/
+        }/*
+
+        */
 
         /*   .nav3 a:active {
             display: block;
@@ -221,16 +239,43 @@
             background-color: red;
             border-radius: 3px;
         }*/
-
-
         .headline1 a:link {
-            color: rgb(54, 32, 179);
+            color: rgb(48, 160, 194);
             text-decoration: none;
         }
 
         .headline1 a:hover {
             color: rgb(226, 19, 88);
             text-decoration: underline 1px;
+        }
+
+        .dtable {
+
+            text-align: center;
+        }
+
+        .line1,
+        .line2,
+        .line3,
+        .line4 {
+            padding-top: 3px;
+        }
+
+        #main0 {
+            vertical-align: text-bottom;
+            text-align: center;
+        }
+
+        .line4 a {
+            border-right: 1px solid black;
+            padding-right: 2px;
+        }
+
+        .line4 a:last-child {
+            border-right: none;
+            padding-right: 2px;
+
+        }
     </style>
 </head>
 
@@ -242,25 +287,20 @@
                     <div id="nav" class="table">
                         <div class="row">
                             <div class="cell" id="nav1">
-                                Most Popular Stories
+                                <p> Most Popular Stories</p>
                             </div>
                             <div class="cell" id="nav2">
                                 <a href=" https://www.newsnow.co.uk/h/" target="_blank"> What's This? </a>
                             </div>
-                            <div class="cell">
-                                <div class="nav3">
-                                    <a href="https://www.newsnow.co.uk/h/" target="_blank">NOW</a>
-                                </div>
+                            <div class="cell" id="nav3">
+                                <a href="https://www.newsnow.co.uk/h/" target="_blank">NOW</a>
                             </div>
-                            <div class="cell">
-                                <div class="nav3">
-                                    <a href="https://www.newsnow.co.uk/h/" target="_blank">TODAY</a>
-                                </div>
+                            <div class="cell" id="nav3">
+                                <a href="https://www.newsnow.co.uk/h/" target="_blank">TODAY</a>
                             </div>
-                            <div class="cell">
-                                <div class="nav3">
-                                    <a href="https://www.newsnow.co.uk/h/" target="_blank">THIS WEEK</a>
-                                </div>
+                            <div class="cell" id="nav3">
+                                <a href="https://www.newsnow.co.uk/h/" target="_blank">THIS WEEK</a>
+
                             </div>
                         </div>
                     </div>
@@ -271,10 +311,10 @@
                                     <div class="row">
                                         <div class="cell">
                                             <div class="table">
-                                                <div class="date">
+                                                <div class=" date">
                                                     <div class="row">
                                                         <div class="cell">
-                                                            <div class="numtop">
+                                                            <div class="numtop" id="main0">
                                                                 PROP IT &#8657;
                                                             </div>
                                                         </div>
@@ -302,31 +342,37 @@
                                                     <div class="row">
                                                         <div class="cell">
                                                             <div class="line1">
-                                                                C-SPAN ranks presidents: Abe still on top, new shocker
-                                                                at the
-                                                                botyom
-                                                                <a href="htps://...">&#187</a>
+                                                                <p> C-SPAN ranks presidents: Abe still on top, new
+                                                                    shocker
+                                                                    at the
+                                                                    botyom
+                                                                    <a href="htps://...">&#187</a>
+                                                                </p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="cell">
-                                                            <div class="line2">>
-                                                                Posted by: <a href="htps://...">techn...k</a> 6 hours,
-                                                                32
-                                                                minutes
-                                                                ago in <a href="htps://...">Politics</a>
+                                                            <div class="line2">
+                                                                <p> Posted by: <a href="htps://...">techn...k</a> 6
+                                                                    hours,
+                                                                    32
+                                                                    minutes
+                                                                    ago in <a href="htps://...">Politics</a>
+                                                                </p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="cell">
                                                             <div class="line3">
-                                                                Todays is President's Day, that sacred haliday on the
-                                                                United
-                                                                States calendar
-                                                                devoted to honoring the births of the two most important
-                                                                presidents in ...
+                                                                <p>Todays is President's Day, that sacred haliday on the
+                                                                    United
+                                                                    States calendar
+                                                                    devoted to honoring the births of the two most
+                                                                    important
+                                                                    presidents in ...
+                                                                </p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -334,7 +380,7 @@
                                                         <div class="cell">
                                                             <div class="line4">
                                                                 <a href="htps://...">More</a>
-                                                                <a href="htps://...">Discous</a>(0)
+                                                                <a href="htps://...">Discous (0)</a>
                                                                 <a href="htps://...">Read Full Story
                                                                     atlatimesblogs.latimes.com</a>
                                                             </div>
@@ -352,7 +398,7 @@
                         <div class="cell">
                             <div id="main2" class="cell">
                                 <div class="row">
-                                    <div class="cell">
+                                    <div class="cell" id="main0">
                                         <div class="table">
                                             <div class="date">
                                                 <div class="row">
@@ -407,8 +453,8 @@
                                                 </div>
                                                 <div class="row">
                                                     <div class="line4" class="cell">
-                                                        <a href="htps://...">More</a> <a
-                                                            href="htps://...">Discous</a>(1) <a href="htps://...">Full
+                                                        <a href="htps://...">More</a> <a href="htps://...">Discous
+                                                            (1)</a> <a href="htps://...">Full
                                                             Story at
                                                             gatewaypunding.blogspot.com</a>
                                                     </div>
@@ -466,16 +512,19 @@
                                                     <div class="row">
                                                         <div class="cell">
                                                             <div class="line2">
-                                                                Posted by: <a href="htps://...">techn...k</a> 6 hours,
-                                                                ago in <a href="htps://...">Politics</a>
+                                                                <p> Posted by: <a href="htps://...">techn...k</a> 6
+                                                                    hours,
+                                                                    ago in <a href="htps://...">Politics</a>
+                                                                </p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="cell">
                                                             <div class="line3">
-                                                                No Child Left Behind demands equal test scores from
-                                                                neighborthoods with unequal and resurces.
+                                                                <p> No Child Left Behind demands equal test scores from
+                                                                    neighborthoods with unequal and resurces.
+                                                                </p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -483,7 +532,7 @@
                                                         <div class="cell">
                                                             <div class="line4">
                                                                 <a href="htps://...">More</a>
-                                                                <a href="htps://...">Discous</a>(0)
+                                                                <a href="htps://...">Discous (0)</a>
                                                                 <a href="htps://...">Read Full Story
                                                                     atlatimesblogs.latimes.com</a>
                                                             </div>
@@ -533,29 +582,35 @@
                                             <div class="headline1">
                                                 <div class="row">
                                                     <div class="line1" class="cell">
-                                                        Obama Makes History... Breaks US Debt Record in Just 30 Days
-                                                        <a href="htps://...">&#187</a>
+                                                        <p> Obama Makes History... Breaks US Debt Record in Just 30 Days
+                                                            <a href="htps://...">&#187</a>
+                                                        </p>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="line2" class="cell">
-                                                        Posted by: <a href="htps://...">pc25</a> 21 minutes ago in <a
-                                                            href="htps://...">News</a>
+                                                        <p> Posted by: <a href="htps://...">pc25</a> 21 minutes ago in
+                                                            <a href="htps://...">News</a>
+                                                        </p>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="cell">
                                                         <div class="line3">
-                                                            The head of a Turkish nationalist group could up to a year
-                                                            in jall after being charged over a placard he put in his ...
+                                                            <p> The head of a Turkish nationalist group could up to a
+                                                                year
+                                                                in jall after being charged over a placard he put in his
+                                                                ...
+                                                            </p>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="line4" class="cell">
-                                                        <a href="htps://...">More</a> <a
-                                                            href="htps://...">Discous</a>(1) <a href="htps://...">Full
-                                                            Story at
+                                                    div class="cell">
+                                                    <div class="line4">
+                                                        <a href="htps://...">More</a>
+                                                        <a href="htps://...">Discous (0)</a>
+                                                        <a href="htps://...">Read Full Story
                                                             gatewaypunding.blogspot.com</a>
                                                     </div>
                                                 </div>
@@ -570,7 +625,6 @@
             </div>
         </div>
     </div>
-
 </body>
 
 </html>
